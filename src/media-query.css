@@ -1,0 +1,59 @@
+
+@media(min-width:320px) and (max-width:480px) {
+    .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+    }
+    .navbar-nav {
+        flex-direction: column !important;  
+       }
+}
+
+@media(min-width:480px) and (max-width:767px) {
+.trending-img-size {
+    height: 226px;
+}
+
+.trending-img-size > img {
+    height: 240px;
+}
+
+.trending-img-relative {
+    right: 0;
+}
+ 
+.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active {
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+}
+.navbar-light .navbar-nav .nav-link {
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+}
+
+.navbar-nav {
+    flex-direction: column !important;
+    margin-top: 15px;  
+   }
+
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%)!important;
+    }
+    
+    .navbar-nav {
+        flex-direction: column !important;
+        margin-top: 15px;  
+       }
+ }
