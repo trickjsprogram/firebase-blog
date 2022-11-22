@@ -177,8 +177,8 @@ $yellow:#f5bc04;
 //   Blog Section
 
 .blog-heading {
-    font-size: 20px;
-	color: #424040;
+	font-size: 24px;
+	color: #222;
     border-bottom: 1px solid #777;
 }
 
@@ -481,4 +481,194 @@ $yellow:#f5bc04;
  -webkit-transform: translateX(0);
  transform: translateX(0);
 }
+}
+
+// search
+.form-inline {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+}
+
+.search-btn {
+	float: left;
+}
+
+// Category
+.widget {
+	position: relative;
+    display: block;
+    margin-bottom: 3rem;
+}
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.link-widget li {
+    padding: 1.2rem 0.8rem 1.7rem;
+    text-transform: capitalize;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    margin: 0;
+    border-bottom: 1px dashed #dadada;
+}
+
+.link-widget li:last-child {
+    border-bottom: 0 dashed #dadada;
+}
+
+.link-widget li span {
+    position: absolute;
+    right: 0;
+}
+
+// Scroll
+.scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+	@include transition(.5s);
+	cursor: pointer;
+	z-index: 1;
+	span {
+		width: 50px;
+		height: 50px;
+		display: table;
+		background: rgba(0,0,0,.5);
+		color: white;
+		text-align: center;
+		@include border-radius(4px);
+	}
+	i {
+		height: 20px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+  }
+
+//   Card
+.related-content {
+	border-radius: 20px;
+	cursor: pointer;
+  }
+
+// Comment
+
+.custombox {
+	position: relative;
+    padding: 3rem 2rem;
+    border: 1px dashed #dadada;
+	margin-top: 20px;
+}
+
+.comments-list p {
+    margin-bottom: 1rem
+}
+
+.comments-list .media-right,
+.comments-list small {
+    color: #999 !important;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.media {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+		-ms-flex-align: start;
+			align-items: flex-start;
+  }
+  
+
+.comments-list .media {
+    padding: 1rem;
+    margin-bottom: 15px;
+}
+
+.media-body {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 0%;
+		-ms-flex: 1 1 0%;
+			flex: 1 1 0%;
+  }
+
+.media-body .btn-primary {
+    padding: 5px 15px !important;
+    font-size: 11px !important;
+}
+
+.comments-list img {
+    max-width: 80px;
+    margin-right: 30px;
+}
+	 
+
+.small-title {
+    background: #edeff2 none repeat scroll 0 0;
+    font-size: 16px;
+	font-weight: 700;
+    left: 5%;
+    line-height: 1;
+    margin: 0;
+    padding: 0.6rem 1.5rem;
+    position: absolute;
+    text-align: center;
+    top: -18px;
+	color:#ffffff !important;
+	background-color: #74a044 !important;
+	border-color: #74a044 !important;
+}
+
+.user_name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+// Pagination
+.btn_mange_pagging {
+	background: #dadada;
+	padding: 12px 20px;
+	color: #222!important;
+	font-weight: 800;
+	margin: 0 10px;
+	border-radius: 10px;
+	@include transition(0.5s);
+}
+
+.btn_mange_pagging:hover, .btn_mange_pagging:focus {
+	background: #222;
+	color: #fff!important;
+	font-weight: 800;
+}
+
+.btn_pagging {
+	background: #dadada!important;
+	color: #222;
+	padding: 12px 20px!important;
+	font-weight: 800;
+	margin: 0 10px;
+	@include transition(0.5s);
+}
+
+.btn_pagging:hover, .btn_pagging:focus {
+	background: #222!important;
+	color: #fff;
+}
+
+.scroll {
+	width: auto;
+	height: 230px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-align:justify;
 }
