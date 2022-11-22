@@ -5,7 +5,7 @@ import BlogSection from "../components/BlogSection";
 import Spinner from "../components/Spinner";
 import { db } from "../firebase";
 
-const CategoryBlog = () => {
+const CategoryBlog = ({ setActive }) => {
   const [categoryBlogs, setCategoryBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
   const { category } = useParams();
@@ -25,6 +25,7 @@ const CategoryBlog = () => {
 
   useEffect(() => {
     getCategoryBlogs();
+    setActive(null);
   }, []);
 
   if (loading) {
